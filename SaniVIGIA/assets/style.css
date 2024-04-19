@@ -1,0 +1,173 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module.content {
+  padding: 40px 0;
+  background: #ece7d5;
+}
+
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
+  background: -moz-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
+  background: -o-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
+}
+
+section.module.parallax-1 {
+  background-image: url("https:/lamattinadigital.com.br/wp-content/uploads/2023/07/8-temas-gratuitos-para-sites-de-saude-no-WordPress.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("https://maceioalgovbr.dhost.cloud/uploads/imagens/WhatsApp-Image-2022-11-01-at-14.39.48.jpeg");
+}
+section.module.parallax-3 {
+  background-image: url("https://www.designi.com.br/images/preview/11502146.jpg");
+}
+
+section.module.parallax h1 {
+  color: blue;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+section.module.parallax span {
+  color: orange;
+}
+
+section.module.parallax-2 h1 {
+  color: white;
+}
+
+section.module.parallax-3 h1 {
+  color: white;
+}
+
+form {
+  background-color: #ffffff;
+  max-width: 500px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+form h4 {
+  text-align: center;
+  font-size: 30px;
+}
+
+form p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input-single {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-single label {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.2s;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  font-size: 17px;
+  outline: none;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #2d5962;
+}
